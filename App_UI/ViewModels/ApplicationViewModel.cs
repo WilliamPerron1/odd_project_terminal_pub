@@ -130,13 +130,26 @@ namespace App_UI.ViewModels
         {
             /// TODO 02a : Compléter ExportData
             /// Utiliser PeopleDataService.Instance.GetAllAsJson() pour récupérer le json
+
+            string json = PeopleDataService.Instance.GetAllAsJson();
+
+            using (var tw = new StreamWriter("person.json", true))
+            {
+                tw.WriteLine(json);
+                tw.Close();
+            }
+
         }
 
         private async void ImportData(string obj)
         {
             /// TODO 01b : Compléter la commande d'importation
             /// Utiliser PeopleDataService.Instance.SetAllFromJson(string allContent)
+
+           
             
+
+
         }
 
         private void initViewModels()

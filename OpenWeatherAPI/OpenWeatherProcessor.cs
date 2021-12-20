@@ -55,7 +55,7 @@ namespace OpenWeatherAPI
             query["lat"] = Latitude; // Shawinigan
             query["lon"] = Longitude;
             query["units"] = "metric";
-            query["appid"] = ApiKey;
+            query["appid"] = "60c250b58acfe2a1b04d6ba4f7784d38";
 
 
             uriBuilder.Query = query.ToString();

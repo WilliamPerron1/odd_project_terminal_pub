@@ -8,6 +8,7 @@
              xmlns:ctrl="clr-namespace:App_UI.Controls"
              mc:Ignorable="d" 
              xmlns:vm="clr-namespace:App_UI.ViewModels"
+             xmlns:p="clr-namespace:App_UI.Properties"
              d:DataContext="{d:DesignInstance Type=vm:UsersViewModel}"
              d:DesignHeight="450" d:DesignWidth="850">
     <UserControl.Resources>

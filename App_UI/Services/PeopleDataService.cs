@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 
 namespace App_UI.Services
@@ -147,8 +148,13 @@ namespace App_UI.Services
         public int SetAllFromJson(string allContent)
         {
             /// TODO 01c : Compléter la méthode pour convertir les données
+            Person person = JsonConvert.DeserializeObject<Person>(allContent);
+
+            data.Add(person);
+
             
-            return 0;
+
+            return allContent.Count();
         }
 
         /// <summary>
@@ -158,7 +164,9 @@ namespace App_UI.Services
         public string GetAllAsJson()
         {
             /// TODO 02b : Compléter la méthode pour convertir les données
-            return string.Empty;
+
+            string resultat = JsonConvert.SerializeObject(data, Formatting.Indented);
+            return resultat;
         }
 
         public IEnumerable<Person> GetAll()

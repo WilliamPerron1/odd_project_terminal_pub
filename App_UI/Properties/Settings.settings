@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="apiKey" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">60c250b58acfe2a1b04d6ba4f7784d38</Value>
     </Setting>
     <Setting Name="users" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)" />

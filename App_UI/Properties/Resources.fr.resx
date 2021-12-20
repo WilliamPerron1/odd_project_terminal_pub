@@ -138,4 +138,7 @@
   <data name="mi_preferences" xml:space="preserve">
     <value>Préférences...</value>
   </data>
+  <data name="xd" xml:space="preserve">
+    <value>resultat de test</value>
+  </data>
 </root>
